@@ -6,4 +6,16 @@ using System;
 using System.Collections.Generic;
 delegate T NumberChanger<T>(T n);
 namespace generic_delegate
+{
+    class TestDelegate
+    {
+        static int num = 10;
+        public static int AddNum(int p)
+        {
+            num += p;
+            return num;
+        }
 
+
+    }
+}
