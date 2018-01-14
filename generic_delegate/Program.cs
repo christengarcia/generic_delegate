@@ -16,6 +16,11 @@ namespace generic_delegate
             return num;
         }
 
+        public static int MultNum(int q)
+        {
+            num *= q;
+            return num;
+        }
 
     }
 }
