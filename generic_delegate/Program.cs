@@ -27,6 +27,15 @@ namespace generic_delegate
             return num;
         }
 
-
+        static void Main(string[] args)
+        {
+            NumberChanger<int> nc1 = new NumberChanger<int>(AddNum);
+            NumberChanger<int> nc2 = new NumberChanger<int>(MultNum);
+            nc1(25);
+            Console.WriteLine("Value of Num: {0}", GetNum());
+            nc2(5);
+            Console.WriteLine("Value of Num: {0}", GetNum());
+            Console.ReadKey();
+        }
     }
 }
