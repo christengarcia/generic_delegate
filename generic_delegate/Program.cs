@@ -22,5 +22,11 @@ namespace generic_delegate
             return num;
         }
 
+        public static int GetNum()
+        {
+            return num;
+        }
+
+
     }
 }
